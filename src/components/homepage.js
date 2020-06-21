@@ -9,7 +9,7 @@ const HomePage = () => {
   React.useEffect(() => {
     let tempProducts = localStorage.getItem('products');
     if (!tempProducts) {
-      axios.get('http://fabelio-technical-test.herokuapp.com//api/mst-product/').then((result) => {
+      axios.get('http://fabelio-technical-test.herokuapp.com/api/mst-product/').then((result) => {
         let data = result.data;
         let firstItem = data.shift();
         setProduct(firstItem);
