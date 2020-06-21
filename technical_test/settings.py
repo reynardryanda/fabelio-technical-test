@@ -26,7 +26,7 @@ SECRET_KEY = 'ia!jd$rh2fp7v2k+vl=n)sr$f^49#yy3i_8(@4xr#nb%1ykob#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['http://fabelio-technical-test.herokuapp.com/', '127.0.0.1:8000']
+ALLOWED_HOSTS = ['fabelio-technical-test.herokuapp.com/', '127.0.0.1:8000']
 
 
 # Application definition
