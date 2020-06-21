@@ -19,12 +19,6 @@ const Product = ({ product }) => {
     }
   `;
 
-  const FlexWrapper = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  `;
-
   const ImageWrapper = styled.div`
     max-width: 100%;
     border-radius: 20px;
@@ -96,13 +90,13 @@ const Product = ({ product }) => {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   `;
 
-  const color = product.details.map((detail,index) => {
-    if (product.details.length-1 == index) {
-      return `dan ${detail.color}`
+  const color = product.details.map((detail, index) => {
+    if (product.details.length - 1 === index) {
+      return `dan ${detail.color}`;
     } else {
-      return `${detail.color}, `
+      return `${detail.color}, `;
     }
-  })
+  });
 
   return (
     <Container>
@@ -112,9 +106,17 @@ const Product = ({ product }) => {
       <BackgroundWhite>
         <Description>
           <Title>{product.name}</Title>
-          <Price>Rp{String(product.price).split(/(?=(?:...)*$)/).join('.')},00</Price>
+          <Price>
+            Rp
+            {String(product.price)
+              .split(/(?=(?:...)*$)/)
+              .join('.')}
+            ,00
+          </Price>
           <Details>
-            Sofa {product.max_seats} dudukan dengan dimensi {product.dimension} dan terbuat dari {product.material} tersedia dalam {product.details.length} warna, {color}.
+            Sofa {product.max_seats} dudukan dengan dimensi {product.dimension}{' '}
+            dan terbuat dari {product.material} tersedia dalam{' '}
+            {product.details.length} warna, {color}.
           </Details>
           <Button>Beli Sekarang</Button>
         </Description>
