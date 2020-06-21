@@ -17,7 +17,7 @@ const Navbar = (props) => {
     `
 
     const Logo = styled.div`
-        padding: 1rem
+        padding: 1rem;
         cursor: pointer;
     `
 
