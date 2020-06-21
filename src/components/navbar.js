@@ -18,6 +18,7 @@ const Navbar = (props) => {
 
     const Logo = styled.div`
         padding: 1rem
+        cursor: pointer;
     `
 
     const LogoText = styled.p`
@@ -35,6 +36,7 @@ const Navbar = (props) => {
 
     const Link = styled.div`
         padding: 1rem;
+        cursor: pointer;
     `
 
     return (
