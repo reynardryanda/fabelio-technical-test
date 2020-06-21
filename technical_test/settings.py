@@ -99,7 +99,7 @@ DATABASES = {
 if os.environ.get('DATABASE_URL') != None:
     DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
     DATABASES['default']['ENGINE'] = 'django.db.backends.postgresql_psycopg2'
-    DEBUG = False
+    # DEBUG = False
 
 
 # Password validation
