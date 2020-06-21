@@ -1,1 +1,1 @@
-Front end of fabelio technical test
+Web page assignment for Fabelio's technical test
