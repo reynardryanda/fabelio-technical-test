@@ -4,10 +4,9 @@ from database.models import *
 class TRXProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = TRXProduct
-        fields = ["mst_product","color","quantity"]
+        fields = ["id","mst_product","color","quantity"]
         extra_kwargs = {
-            'mst_product': {'write_only': True},
-            'quantity': {'write_only': True}
+            'mst_product': {'write_only': True}
         }
 
 class MSTProductSerializer(serializers.ModelSerializer):
